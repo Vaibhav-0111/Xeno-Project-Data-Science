@@ -27,6 +27,13 @@ desktop.ini
 *.swo
 *~
 
-# Sensitive / generated artefacts (keep .db in repo as raw data)
+# Sensitive / generated artefacts
 *.log
 *.tmp
+*.img
+scratch/
+prompt_*.txt
+
+# Unrequired / internal generator & scratch scripts
+generate_dataset.py
+verify_standalone.py

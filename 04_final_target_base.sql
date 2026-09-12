@@ -2,7 +2,7 @@
 -- 04_final_target_base.sql  (FINAL CORRECTED VERSION)
 -- Purpose : Correct SQL returning target_base = 22
 --           for merchant 501, October 2026, all Diwali campaigns.
--- Database: comm_log.db (SQLite)
+-- Database: data/comm_log.db (SQLite)
 -- Verified: Returns 22
 -- =============================================================
 

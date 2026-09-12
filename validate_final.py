@@ -7,7 +7,9 @@ the result equals 22.  Also shows the per-family breakdown.
 import sqlite3
 from pathlib import Path
 
-DB = Path(__file__).resolve().parent / "comm_log.db"
+DB = Path(__file__).resolve().parent / "data" / "comm_log.db"
+if not DB.exists():
+    DB = Path(__file__).resolve().parent / "comm_log.db"
 conn = sqlite3.connect(DB)
 
 # ── FINAL TARGET BASE QUERY ─────────────────────────────────────────────

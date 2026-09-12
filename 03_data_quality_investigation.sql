@@ -3,7 +3,7 @@
 -- Purpose : Investigate all potential data-quality issues that
 --           could explain the gap between the naive count and
 --           Finance's target_base of 22.
--- Database: comm_log.db (SQLite)
+-- Database: data/comm_log.db (SQLite)
 -- =============================================================
 
 -- ----------------------------------------------------------------

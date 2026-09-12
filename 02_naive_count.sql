@@ -2,7 +2,7 @@
 -- 02_naive_count.sql
 -- Purpose : Calculate the most obvious initial target_base count
 --           before applying any data-quality adjustments.
--- Database: comm_log.db (SQLite)
+-- Database: data/comm_log.db (SQLite)
 -- =============================================================
 
 -- Naive query: join communication_log to campaign on campaign id,

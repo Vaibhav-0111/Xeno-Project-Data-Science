@@ -2,7 +2,7 @@
 -- 01_schema_exploration.sql
 -- Purpose : Inspect database structure, table schemas, and
 --           overall data profile for the comm-log assignment.
--- Database: comm_log.db (SQLite)
+-- Database: data/comm_log.db (SQLite)
 -- Author  : Data Analyst Candidate
 -- =============================================================
 

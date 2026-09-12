@@ -78,3 +78,18 @@ its own event, whether or not the same customer appears twice.
 
 All data is for `merchant_id = 501`, sends in October 2026, `communication_type = '2'`
 (Campaign) only.
+
+## Repository Structure & Deliverables
+
+| File | Description |
+|---|---|
+| [`SUBMISSION.md`](SUBMISSION.md) | Complete investigation report, reconciliation bridge table, and business insights |
+| [`01_schema_exploration.sql`](01_schema_exploration.sql) | SQL script exploring SQLite database structure and data profiling |
+| [`02_naive_count.sql`](02_naive_count.sql) | Naive baseline query (yielding 30) |
+| [`03_data_quality_investigation.sql`](03_data_quality_investigation.sql) | Step-by-step data quality & eligibility queries |
+| [`04_final_target_base.sql`](04_final_target_base.sql) | Final reconciliation SQL query (yielding exact target_base = 22) |
+| [`analysis.py`](analysis.py) | Reproducible Python analysis running all SQL queries |
+| [`validate_final.py`](validate_final.py) | Automated validation script verifying `target_base == 22` |
+| [`data/comm_log.db`](data/comm_log.db) | SQLite database |
+| [`data/campaign.csv`](data/campaign.csv) | Campaign table raw CSV mirror |
+| [`data/communication_log.csv`](data/communication_log.csv) | Communication log raw CSV mirror |

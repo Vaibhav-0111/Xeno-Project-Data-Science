@@ -33,10 +33,9 @@ Three adjustments are required:
 | File | Contents |
 |---|---|
 | `README.md` | Data dictionary, business rules, retry-chain semantics, scope |
-| `comm_log.db` | SQLite database with tables `campaign` and `communication_log` |
-| `campaign.csv` | CSV mirror of the `campaign` table (7 rows) |
-| `communication_log.csv` | CSV mirror of `communication_log` table (30 rows) |
-| `generate_dataset.py` | Dataset generation script documenting the intended scenario |
+| `data/comm_log.db` | SQLite database with tables `campaign` and `communication_log` |
+| `data/campaign.csv` | CSV mirror of the `campaign` table (7 rows) |
+| `data/communication_log.csv` | CSV mirror of `communication_log` table (30 rows) |
 
 #### 2.2 Table: `campaign` (7 rows)
 
@@ -330,7 +329,7 @@ The naive count of 30 differs from 22 for two root causes:
    - **Family B (9201→9202):** 6 raw rows → **5 distinct customers**.
    - Total: 10 + 7 + 5 = **22**.
 
-All findings are evidence-based, supported by SQL queries executed against `comm_log.db`, and validated independently by `validate_final.py`.
+All findings are evidence-based, supported by SQL queries executed against `data/comm_log.db`, and validated independently by `validate_final.py`.
 
 ---
 
@@ -342,7 +341,7 @@ All findings are evidence-based, supported by SQL queries executed against `comm
 - [x] All relevant adjustments investigated with evidence
 - [x] Every adjustment supported by a SQL query and README reference
 - [x] Reconciliation bridge ends at **22**
-- [x] Final SQL is executable against SQLite (`comm_log.db`)
+- [x] Final SQL is executable against SQLite (`data/comm_log.db`)
 - [x] SQL result independently validated (`validate_final.py`)
 - [x] Data surprises paragraph included
 - [x] No fabricated data or assumptions presented as facts

@@ -17,7 +17,9 @@ Requirements: Python 3.8+ (stdlib sqlite3 only)
 import sqlite3
 from pathlib import Path
 
-DB_PATH = Path(__file__).resolve().parent / "comm_log.db"
+DB_PATH = Path(__file__).resolve().parent / "data" / "comm_log.db"
+if not DB_PATH.exists():
+    DB_PATH = Path(__file__).resolve().parent / "comm_log.db"
 
 
 def run(conn, label, sql):
